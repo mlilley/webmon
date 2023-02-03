@@ -7,6 +7,7 @@ import { createRequire } from "module";
 
 const PAGES = createRequire(import.meta.url)('./pages.json');
 const STORE_PATH = './store';
+const DIFFCMD = 'diff';
 
 function getPageDir(page) {
     return STORE_PATH + '/' + page.id;
@@ -105,7 +106,7 @@ function findPageInitialFile(page) {
 function diffPage(aPath, bPath) {
     let output;
     try {
-        output = cp.execSync('diff \'' + aPath + '\' \'' + bPath + '\'' );
+        output = cp.execSync(DIFFCMD + " '" + aPath + "' '" + bPath + "'");
     } catch (err) {
         return { ok: true, diff: err.stdout.toString('utf8') };
     }
