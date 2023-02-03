@@ -1,0 +1,5 @@
+[{ 
+    "id": "google_home", 
+    "url": "https://www.google.com/", 
+    "xpaths": [ "//form[@role='search']" ]
+}]

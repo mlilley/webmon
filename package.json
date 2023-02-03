@@ -1,0 +1,16 @@
+{
+  "name": "webmon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "got": "^12.5.3",
+    "xpath-html": "^1.0.3"
+  }
+}
